@@ -1,11 +1,21 @@
-class Person {
-    constructor(name) {
-        this.name = name
-    }
-
-    getName() {
-        return this.name
+class SingleObject {
+    login() {
+        console.log('login...')
     }
 }
-let p = new Person("hello world")
-alert(p.getName())
+SingleObject.getInstance = (function () {
+    let instance
+    return function () {
+        if(!instance) {
+            instance = new SingleObject()
+        }
+        return instance
+    }
+})()
+
+let obj1 = SingleObject.getInstance()
+obj1.login()
+let obj2 = SingleObject.getInstance()
+obj2.login()
+
+console.log('obj1 === obj2',obj1 === obj2)
