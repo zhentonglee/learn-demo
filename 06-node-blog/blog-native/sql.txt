@@ -1,0 +1,21 @@
+-- use myblog;
+-- show tables;
+-- insert into users (username,`password`,realname) values ('lisi',123,'李四');
+
+-- select * from users;
+-- select * from users where username='zhangsan' and `password`=123;
+-- select * from users where `password` like '%1%';
+-- select * from users where `password` like '%1%' order by id desc;
+
+-- SET SQL_SAFE_UPDATES = 0;
+-- update users set realname='李四2' where username='lisi';
+
+-- delete from users where username='lisi';
+-- select * from users where state<>0;
+-- update users set state=1 where username='lisi';-- 软删除
+
+-- insert into blogs(title, content, createtime, author) values ('标题B','内容B',1566839178470,'lisi');
+
+-- select * from blogs;
+
+-- select version();
