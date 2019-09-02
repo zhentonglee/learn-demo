@@ -45,4 +45,34 @@ router.post('/new', loginCheck, (req, res, next) => {
     })
 })
 
+router.post('/update', loginCheck, (req, res, next) => {
+    const result = updateBlog(res.query.id, req.body)
+    return result.then(val => {
+        if(val) {
+            res.json(
+                new SuccessModel()
+            )
+        }else{
+            res.json(
+                new ErrorModel('更新博客失败')
+            )
+        }
+    })
+})
+
+router.post('/del', loginCheck, (req, res, next) => {
+    const result = delBlog(res.query.id, req.session.author)
+    return result.then(val => {
+        if(val) {
+            res.json(
+                new SuccessModel()
+            )
+        }else{
+            res.json(
+                new ErrorModel('删除博客失败')
+            )
+        }
+    })
+})
+
 module.exports = router;
