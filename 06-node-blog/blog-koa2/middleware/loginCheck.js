@@ -1,6 +1,6 @@
 const { ErrorModel } = require('../model/resModel')
 
-module.exports = (ctx, next) => {
+module.exports = async (ctx, next) => {
     if(req.session.username) {
         await next()
         return

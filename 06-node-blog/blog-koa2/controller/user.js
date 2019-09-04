@@ -1,7 +1,7 @@
 const { exec, escape } = require('../db/mysql')
 const { genPassword } = require('../utils/cryp')
 
-const login = (username, password) => {
+const login = async (username, password) => {
     //生成加密密码
     password = genPassword(password)
 

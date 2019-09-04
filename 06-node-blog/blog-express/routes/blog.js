@@ -11,7 +11,7 @@ router.get('/list', (req, res, next) => {
     if(req.query.isAdmin) {
         if(req.session.username == null) {
             res.json(
-                new ErrorModel(listData)
+                new ErrorModel('未登录')
             )
             return
         }
