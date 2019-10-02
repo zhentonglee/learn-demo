@@ -7,3 +7,5 @@
 - [914.卡牌分组](https://leetcode-cn.com/problems/x-of-a-kind-in-a-deck-of-cards/)
 - [605.种花问题](https://leetcode-cn.com/problems/can-place-flowers/)
 - [89.格雷编码](https://leetcode-cn.com/problems/gray-code/)
+#### 正则表达式
+- [459.重复的子字符串](https://leetcode-cn.com/problems/repeated-substring-pattern/)
