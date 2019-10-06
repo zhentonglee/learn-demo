@@ -18,3 +18,6 @@
 #### 递归
 - [93.复原IP地址](https://leetcode-cn.com/problems/restore-ip-addresses/)
 - [30.串联所有单词的子串](https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/)
+#### 栈
+- [682.棒球比赛](https://leetcode-cn.com/problems/baseball-game/)
+- [85.最大矩形](https://leetcode-cn.com/problems/maximal-rectangle/)
