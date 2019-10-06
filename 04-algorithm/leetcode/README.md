@@ -21,3 +21,6 @@
 #### 栈
 - [682.棒球比赛](https://leetcode-cn.com/problems/baseball-game/)
 - [85.最大矩形](https://leetcode-cn.com/problems/maximal-rectangle/)
+#### 队列
+- [622.设计循环队列](https://leetcode-cn.com/problems/design-circular-queue/)
+- [621.任务调度器](https://leetcode-cn.com/problems/task-scheduler/)
