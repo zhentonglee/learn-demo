@@ -26,3 +26,6 @@
 - [621.任务调度器](https://leetcode-cn.com/problems/task-scheduler/)
 #### 链表
 - [148.排序链表](https://leetcode-cn.com/problems/sort-list/)
+- [141.环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)
+#### 矩阵
+- [54.螺旋矩阵](https://leetcode-cn.com/problems/spiral-matrix/)
