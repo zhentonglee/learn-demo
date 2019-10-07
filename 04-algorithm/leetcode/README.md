@@ -24,3 +24,5 @@
 #### 队列
 - [622.设计循环队列](https://leetcode-cn.com/problems/design-circular-queue/)
 - [621.任务调度器](https://leetcode-cn.com/problems/task-scheduler/)
+#### 链表
+- [148.排序链表](https://leetcode-cn.com/problems/sort-list/)
