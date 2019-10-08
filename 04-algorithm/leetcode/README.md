@@ -30,3 +30,6 @@
 #### 矩阵
 - [54.螺旋矩阵](https://leetcode-cn.com/problems/spiral-matrix/)
 - [48.旋转图像](https://leetcode-cn.com/problems/rotate-image/)
+#### 二叉树
+- [101.对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/)
+- [98.验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
