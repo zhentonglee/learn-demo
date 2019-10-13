@@ -36,3 +36,6 @@
 #### 堆
 - [451.根据字符出现频率排序](https://leetcode-cn.com/problems/sort-characters-by-frequency/)
 - [313.超级丑数](https://leetcode-cn.com/problems/super-ugly-number/)
+#### 贪心算法
+- [122.买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)
+- [860.柠檬水找零](https://leetcode-cn.com/problems/lemonade-change/)
