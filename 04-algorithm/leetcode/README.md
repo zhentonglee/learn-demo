@@ -35,3 +35,4 @@
 - [98.验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
 #### 堆
 - [451.根据字符出现频率排序](https://leetcode-cn.com/problems/sort-characters-by-frequency/)
+- [313.超级丑数](https://leetcode-cn.com/problems/super-ugly-number/)
