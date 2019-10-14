@@ -39,3 +39,6 @@
 #### 贪心算法
 - [122.买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)
 - [860.柠檬水找零](https://leetcode-cn.com/problems/lemonade-change/)
+#### 动态规划
+- [62.不同路径 II](https://leetcode-cn.com/problems/unique-paths-ii/)
+- [787.K 站中转内最便宜的航班](https://leetcode-cn.com/problems/cheapest-flights-within-k-stops/)
