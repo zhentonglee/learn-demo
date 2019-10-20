@@ -1,0 +1,77 @@
+1、linux的内核版本及常见的发行版本
+https://www.kernel.org/
+CentOS
+2、VirtualBox虚拟机
+3、在虚拟机中安装Linux
+https://centos.org/download/
+4、万能的帮助命令：man help info
+man ++、help ++、++ --help、info ++
+5、初识pwd和ls命令
+su - root 切换用户
+crtl+l clear快捷键
+6、详解ls命令
+ls /root /、ls -l、ls -a、ls -l -r、ls -l -r -t、ls -lrt、ls -R、ls -lh（大小单位）
+7、详解cd命令
+cd /path/to、cd ./path/to、cd ../path/to、cd -（回到刚才的目录）
+8、创建和删除目录
+mkdir a b c、mkdir /a、mkdir -p /a/b/c
+rmdir a（删除空目录）、rm -r /a（删除非空目录）、rm -r -f /a、rm -rf /a（强制删除非空目录）
+crtl+c 可以结束当前正在执行的目录
+9、复制和移动目录
+cp -r /root/a /tmp（复制目录）、touch /filea（创建文件）、cp /filea /tmp、cp -v /filea /tmp（提示结果信息）、cp -p /filea /tmp（保留时间、权限等属性）
+mv /filea /fileb（重命名）、mv /filea /tmp（移动）、mv /tmp/filea /fileb（移动并重命名）、mv /dira /tmp（移动文件夹）
+*通配符匹配任意字符，cp -v file* /tmp、？匹配一个字符，cp -v file? /tmp
+10、如何在Linux下进行文本查看
+cat file、head file、tail file、tail -3 file（显示后三行）、tail -f file（同步更新文件变化内容）、wc -l file（查看文件有多少行）
+11、打包、压缩和解压缩
+tar 打包命令，常用参数，c:打包、x:解包、f:指定操作类型为文件
+tar cf /tmp/etc-backup.tar /etc（对etc目录打包成文件放在tmp目录下） 
+gzip、bzip2压缩
+tar czf /tmp/etc-backup.tar.gz /etc（对etc目录打包并压缩成文件放在tmp目录下） 压缩速度更快（扩展名缩写.tgz）
+tar cjf /tmp/etc-backup.tar.bz2 /etc（对etc目录打包并压缩成文件放在tmp目录下） 压缩比更大（扩展名缩写.tbz2）
+tar xf /tmp/etc-backup.tar -C /root（解压）tar zxf /tmp/etc-backup.tar.gz -C /root（解压）tar jxf /tmp/etc-backup.tar.bz2 -C /root（解压）
+12、vi的四种模式
+正常模式、插入模式、命令模式、可视模式
+i、I、a、A、o、O可进入插入模式，光标的位置不同，v进入可视模式，:进入命令模式，hjkl正常模式下光标移动方向
+正常模式下，yy复制一整行，y$复制光标开始到行末，3yy复制三行，p粘贴，dd剪切一整行，d$剪切光标开始到行末，u撤销，ctrl+r重做，d删除行
+x删除光标当前字符，r+输入字符替换当前光标字符
+:set nu显示行数，:set nonu不显示行数，行数+G光标移动到指定行，^光标移动到开头，$光标移动到结尾
+命令模式
+:w /tmp/a.txt 保存为a.txt文件 :wq保存并退出 :q!不保存退出 :![ifconfig] 查找命令行
+查找字符 /some、替换光标所在行 /s/old/new、全局替换单个字符 %s/old/new、全局替换字符 %s/old/new/g、3-5行替换字符 3,,5s/old/new/g
+修改系统vim配置 vim /etc/vimrc 在末行加上set nu显示行号
+v字符可视模式、V行可视模式、ctrl+v块可视模式（搭配d和I可进行块的便利性操作）I两次esc，d删除块
+13、用户和用户组管理
+useradd userdel passwd usermod chage      groupadd添加组 usermod -g group1 user1修改用户组 useradd -g group1 user1创建用户时添加组 groupdel删除组
+14、su和sudo
+su切换用户身份、sudo赋予普通用户管理员可以执行的命令、visudo修改sudo配置、:!which shutdown查找这条命令在哪
+15、用户和用户组的配置文件
+/etc/passwd、/etc/shadom、/etc/group
+16、文件与目录权限的表示方法
+文件类型：-普通文件、d目录文件、b块特殊文件、c字符特殊文件、l符号链接、f命名管道、s套接字文件
+文件权限的表示方法：字符表示 r 读 w 写 x 执行、数字表示 r=4 w=2 x=1
+-rw-r-xr-- 属主 属组 mtime filename 其中（rw-文件属主的权限）（r-x文件属组的权限）（r--其他用户的权限）
+17、文件权限的修改和数字表示
+chmod 修改文件、目录权限   chown 更改属主属组
+18、权限管理以及文件的特殊权限
+echo 123 > file
+19、网络管理
+网络状态查看工具：net-tools（ifconfig、route、netstat）、iproute2（ip、ss）
+20、网络故障排除
+ping、traceroute、mtr、nslookup、telnet、tcpdump、netstat、ss
+21、网络管理和配置文件
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
