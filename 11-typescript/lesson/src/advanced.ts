@@ -1,3 +1,5 @@
+import { type } from "os"
+
 // 类型推断
 
 // 类型兼容
@@ -67,3 +69,96 @@ function getLanguage(type: Type, x: string | number) {
     }
     return lang
 }
+
+// 高级类型
+// 交叉类型（适用于对象混用的场景）和联合类型
+interface DogInterface {
+    run(): void
+}
+interface CatInterface {
+    jump(): void
+}
+let pet: DogInterface & CatInterface = {
+    run() { },
+    jump() { }
+}
+
+let a: string | number = '0'
+let b: 'a' | 'c' = 'c'
+let c: 1 | 2 | 3 = 1
+
+interface Square {
+    kind: 'square'
+    size: number
+}
+interface Rect {
+    kind: 'rect'
+    width: number
+    height: number
+}
+type Shape = Square | Rect
+function area(s: Shape) {
+    switch (s.kind) {
+        case 'square':
+            return s.size * s.size
+        case 'rect':
+            return s.width * s.height
+    }
+}
+
+// 索引类型
+let obj1 = {
+    a: 1,
+    b: 2,
+    c: 3
+}
+function getValues<T, K extends keyof T>(obj1: T, keys: K[]): T[K][] {
+    return keys.map(key => obj1[key])
+}
+getValues(obj1, ['a', 'b'])
+// getValues(obj1, ['e', 'f'])
+
+// keyof T
+interface Obj {
+    a: number,
+    b: number
+}
+let key: keyof Obj
+// T[k]
+let value: Obj['a']
+
+// 映射类型
+interface Obj2 {
+    a: string
+    b: number
+    c: boolean
+}
+type ReadonlyObj = Readonly<Obj2>
+type PartialObj = Partial<Obj2>
+type PickObj = Pick<Obj2, 'a' | 'b'>
+type RecordObj = Record<'x' | 'y', Obj2>
+
+// 条件类型
+type TypeName<T> =
+    T extends string ? 'string' :
+    T extends number ? 'number' :
+    T extends boolean ? 'boolean' :
+    T extends undefined ? 'undefined' :
+    T extends Function ? 'function' :
+    'object'
+type T1 = TypeName<string>
+type T2 = TypeName<string[]>
+type T3 = TypeName<string | string[]>
+
+type Diff<T, U> = T extends U ? never : T
+type T4 = Diff<'a' | 'b' | 'c', 'a' | 'e'>
+
+type NotNull<T> = Diff<T, undefined | null>
+type T5 = NotNull<string | number | undefined | null>
+
+// Exclude<T, U>
+// NonNullAable<T>
+// Extract<T, U>
+type T6 = Exclude<'a' | 'b' | 'c', 'a' | 'e'>
+
+type T7 = ReturnType<() => string>
