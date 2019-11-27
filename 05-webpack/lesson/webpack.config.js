@@ -15,8 +15,31 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /.js$/,
+                test: /\.js$/,
                 use: 'babel-loader'
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.less$/,
+                use: ['style-loader', 'css-loader', 'less-loader']
+            },
+            {
+                test: /\.(png|jpg|jpeg|svg|gif)$/, 
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 30240
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/, 
+                use: ['file-loader']
             }
         ]
     }
