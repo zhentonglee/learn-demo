@@ -4,10 +4,13 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './search.less'
 import logo from './images/logo.jpg'
+import {common} from '../../common'
+import {a} from './tree-shaking'
 
 class Search extends React.Component {
     render() {
-        return <div className="search-text">我允许你走进我的世界。
+        const funcA = a();
+    return <div className="search-text">我允许你走进我的世界。
             <img src={ logo } />
         </div>;
     }
