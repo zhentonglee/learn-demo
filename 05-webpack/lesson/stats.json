@@ -1,0 +1,446 @@
+ DONE  Compiled successfully in 14321ms21:18:07
+
+{
+  "errors": [],
+  "warnings": [],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\react\\index.js",
+      "name": "./node_modules/react/index.js",
+      "index": 5,
+      "index2": 6,
+      "size": 189,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\search\\index.js",
+      "issuerId": null,
+      "issuerName": "./src/search/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 1,
+      "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\common\\index.js",
+      "name": "./common/index.js",
+      "index": 3,
+      "index2": 2,
+      "size": 52,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\index\\index.js",
+      "issuerId": null,
+      "issuerName": "./src/index/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\index\\index.js",
+          "name": "./src/index/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 2,
+      "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\object-assign\\index.js",
+      "name": "./node_modules/object-assign/index.js",
+      "index": 7,
+      "index2": 4,
+      "size": 2226,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\react\\cjs\\react.production.min.js",
+      "issuerId": 5,
+      "issuerName": "./node_modules/react/cjs/react.production.min.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        },
+        {
+          "id": 0,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\react\\index.js",
+          "name": "./node_modules/react/index.js"
+        },
+        {
+          "id": 5,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\react\\cjs\\react.production.min.js",
+          "name": "./node_modules/react/cjs/react.production.min.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 3,
+      "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\react-dom\\index.js",
+      "name": "./node_modules/react-dom/index.js",
+      "index": 8,
+      "index2": 10,
+      "size": 1352,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\search\\index.js",
+      "issuerId": null,
+      "issuerName": "./src/search/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 4,
+      "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\large-number-lzt\\index.js",
+      "name": "./node_modules/large-number-lzt/index.js",
+      "index": 14,
+      "index2": 14,
+      "size": 167,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\search\\index.js",
+      "issuerId": null,
+      "issuerName": "./src/search/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 5,
+      "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\react\\cjs\\react.production.min.js",
+      "name": "./node_modules/react/cjs/react.production.min.js",
+      "index": 6,
+      "index2": 5,
+      "size": 9117,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\react\\index.js",
+      "issuerId": 0,
+      "issuerName": "./node_modules/react/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        },
+        {
+          "id": 0,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\react\\index.js",
+          "name": "./node_modules/react/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 6,
+      "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\react-dom\\cjs\\react-dom.production.min.js",
+      "name": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+      "index": 9,
+      "index2": 9,
+      "size": 175351,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\react-dom\\index.js",
+      "issuerId": 3,
+      "issuerName": "./node_modules/react-dom/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        },
+        {
+          "id": 3,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\react-dom\\index.js",
+          "name": "./node_modules/react-dom/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 7,
+      "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\scheduler\\index.js",
+      "name": "./node_modules/scheduler/index.js",
+      "index": 10,
+      "index2": 8,
+      "size": 197,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\react-dom\\cjs\\react-dom.production.min.js",
+      "issuerId": 6,
+      "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        },
+        {
+          "id": 3,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\react-dom\\index.js",
+          "name": "./node_modules/react-dom/index.js"
+        },
+        {
+          "id": 6,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\react-dom\\cjs\\react-dom.production.min.js",
+          "name": "./node_modules/react-dom/cjs/react-dom.production.min.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 8,
+      "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\scheduler\\cjs\\scheduler.production.min.js",
+      "name": "./node_modules/scheduler/cjs/scheduler.production.min.js",
+      "index": 11,
+      "index2": 7,
+      "size": 7175,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\scheduler\\index.js",
+      "issuerId": 7,
+      "issuerName": "./node_modules/scheduler/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        },
+        {
+          "id": 3,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\react-dom\\index.js",
+          "name": "./node_modules/react-dom/index.js"
+        },
+        {
+          "id": 6,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\react-dom\\cjs\\react-dom.production.min.js",
+          "name": "./node_modules/react-dom/cjs/react-dom.production.min.js"
+        },
+        {
+          "id": 7,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\scheduler\\index.js",
+          "name": "./node_modules/scheduler/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 9,
+      "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\css-loader\\dist\\cjs.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\less-loader\\dist\\cjs.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\postcss-loader\\src\\index.js??ref--6-3!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\px2rem-loader\\index.js??ref--6-4!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\search\\search.less",
+      "name": "./src/search/search.less",
+      "index": 12,
+      "index2": 12,
+      "size": 39,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\search\\index.js",
+      "issuerId": null,
+      "issuerName": "./src/search/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 10,
+      "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\large-number-lzt\\dist\\large-number.min.js",
+      "name": "./node_modules/large-number-lzt/dist/large-number.min.js",
+      "index": 15,
+      "index2": 13,
+      "size": 2163,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\large-number-lzt\\index.js",
+      "issuerId": 4,
+      "issuerName": "./node_modules/large-number-lzt/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        },
+        {
+          "id": 4,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\large-number-lzt\\index.js",
+          "name": "./node_modules/large-number-lzt/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 11,
+      "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\index\\index.js 1b0a472f3d1ee7f454ffd04d4851d7bf",
+      "name": "./src/index/index.js + 2 modules",
+      "index": 0,
+      "index2": 3,
+      "size": 444,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 12,
+      "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\search\\index.js d67c326277c990671ba595a5cf53eacb",
+      "name": "./src/search/index.js + 2 modules",
+      "index": 4,
+      "index2": 17,
+      "size": 3772,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "id": 13,
+      "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\search\\text.js",
+      "name": "./src/search/text.js",
+      "index": 18,
+      "index2": 18,
+      "size": 126,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        3
+      ],
+      "issuer": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\search\\index.js",
+      "issuerId": null,
+      "issuerName": "./src/search/index.js",
+      "issuerPath": [
+        {
+          "id": null,
+          "identifier": "D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\node_modules\\babel-loader\\lib\\index.js!D:\\myGitHub\\learn-demo\\05-webpack\\lesson\\src\\search\\index.js",
+          "name": "./src/search/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0
+    }
+  ],
+  "filteredModules": 1,
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  }
+}
