@@ -10,6 +10,8 @@ const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const SpeedMeasureWebpackPlugin = require('speed-measure-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const TerserPlugin = require('terser-webpack-plugin');
+const webpack = require('webpack');
 
 const smp = new SpeedMeasureWebpackPlugin();
 
@@ -60,7 +62,16 @@ module.exports = smp.wrap({
         rules: [
             {
                 test: /\.js$/,
-                use: 'babel-loader'
+                include: path.resolve("src"),
+                use: [
+                    {
+                        loader: 'thread-loader',
+                        options: {
+                            workers: 3
+                        }
+                    },
+                    'babel-loader'
+                ]
             },
             {
                 test: /\.css$/,
@@ -126,7 +137,7 @@ module.exports = smp.wrap({
         }),
         new CleanWebpackPlugin(),
         new FriendlyErrorsWebpackPlugin(),
-        new BundleAnalyzerPlugin,
+        // new BundleAnalyzerPlugin,
         function() {
             this.hooks.done.tap('done',(stats)=>{
                 if(stats.compilation.errors && stats.compilation.errors.length && process.argv.indexOf('--watch')==-1){
@@ -134,7 +145,10 @@ module.exports = smp.wrap({
                     process.exit(1);
                 }
             })
-        }
+        },
+        new webpack.DllReferencePlugin({
+            manifest: require('./build/library/library.json')
+        })
         // new HtmlWebpackExternalsPlugin({
         //     externals: [
         //         {
@@ -160,7 +174,12 @@ module.exports = smp.wrap({
                     minChunks: 2
                 }
             }
-        }
+        },
+        minimizer: [
+            new TerserPlugin({
+                parallel: true
+            })
+        ]
     },
     stats: 'errors-only'
 });
