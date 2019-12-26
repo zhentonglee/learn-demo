@@ -3,6 +3,7 @@
 const glob = require('glob');
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const PurgecssWebpackPlugin = require('purgecss-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -11,9 +12,14 @@ const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const SpeedMeasureWebpackPlugin = require('speed-measure-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const TerserPlugin = require('terser-webpack-plugin');
+const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 const webpack = require('webpack');
 
 const smp = new SpeedMeasureWebpackPlugin();
+
+const PATHS = {
+    src: path.join(__dirname, 'src')
+}
 
 
 const setMPA = () => {
@@ -70,7 +76,7 @@ module.exports = smp.wrap({
                             workers: 3
                         }
                     },
-                    'babel-loader'
+                    'babel-loader?cacheDirectory=true'
                 ]
             },
             {
@@ -111,7 +117,31 @@ module.exports = smp.wrap({
                             limit: 10240,
                             name: '[name]_[hash:8].[ext]'
                         }
-                    }
+                    },
+                    // {
+                    //     loader: 'image-webpack-loader',
+                    //     options: {
+                    //         mozjpeg: {
+                    //             progressive: true,
+                    //             quality: 65
+                    //         },
+                    //         // optipng.enabled: false will disable optipng
+                    //         optipng: {
+                    //             enabled: false,
+                    //         },
+                    //         pngquant: {
+                    //             quality: [0.65, 0.90],
+                    //             speed: 4
+                    //         },
+                    //         gifsicle: {
+                    //             interlaced: false,
+                    //         },
+                    //         // the webp option will enable WEBP
+                    //         webp: {
+                    //             quality: 75
+                    //         }
+                    //     }
+                    // }
                 ]
             },
             {
@@ -131,6 +161,9 @@ module.exports = smp.wrap({
         new MiniCssExtractPlugin({
             filename: '[name]_[contenthash:8].css'
         }),
+        new PurgecssWebpackPlugin({
+            paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true})
+        }),
         new OptimizeCssAssetsPlugin({
             assetNameRegExp: /\.css$/g,
             cssProcessor: require('cssnano')
@@ -148,7 +181,8 @@ module.exports = smp.wrap({
         },
         new webpack.DllReferencePlugin({
             manifest: require('./build/library/library.json')
-        })
+        }),
+        new HardSourceWebpackPlugin()
         // new HtmlWebpackExternalsPlugin({
         //     externals: [
         //         {
@@ -177,9 +211,18 @@ module.exports = smp.wrap({
         },
         minimizer: [
             new TerserPlugin({
-                parallel: true
+                parallel: true,
+                cache: true
             })
         ]
+    },
+    resolve: {
+        // alias: {
+        //     'react': path.resolve(__dirname, './node_modules/react/umd/react.production.min.js'),
+        //     'react-dom': path.resolve(__dirname, './node_modules/react/umd/react-dom.production.min.js')
+        // },
+        extensions: ['.js'],
+        mainFields:['main']
     },
     stats: 'errors-only'
 });
